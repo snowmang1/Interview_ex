@@ -1,6 +1,6 @@
 name: docker_ci
 on:
-  merge:
+  push:
     branches:
       - 'trunk'
       # will only run on push to trunk branch
