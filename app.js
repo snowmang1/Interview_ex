@@ -1,16 +1,30 @@
 'use strict';
 
+// imports
 const express = require('express');
+// this date library is from https://github.com/knowledgecode/date-and-time#compileformatstring
+const date = require('date-and-time');
 
-// Constants
+// Constants for server info
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
+// timestamp format
+const pattern = date.compile('YYYY/MM/DD h:m:s A');
+
+var data = {
+	message: 'My name is Evan Drake',
+	timestamp: date.format(new Date(), pattern)
+};
+
 // App
 const app = express();
+// request will go to root '/'
 app.get('/', (req, res) => {
-  res.send('Hello World');
+	// res.json will serialize json objects
+	res.send(res.json(data));
 });
 
+// create connection
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
