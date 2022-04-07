@@ -6,9 +6,15 @@
 - npm init
 
 ### 2
-- Node.js backend
+- Node.js Expressjs post json object
 - Docker
 - Express
 
 ## 3
-- Github actions
+- Github actions CI
+- - build docker image
+- - Verify functionality using Liatrio
+
+## 4
+- CD to DockerHub
+- CD to cloud (Heroku)
