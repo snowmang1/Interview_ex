@@ -1,9 +1,5 @@
 name: docker_ci
-on:
-  push:
-    branches:
-      - 'trunk'
-      # will only run on push to trunk branch
+on: [push]
 jobs:
   docker:
     runs-on: ubuntu-latest
