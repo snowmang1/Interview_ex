@@ -26,5 +26,5 @@ app.get('/', (res) => {
 });
 
 // create connection
-app.listen(PORT, HOST);
+app.listen(PORT);
 console.log(`Running on http://${HOST}:${PORT}`);
