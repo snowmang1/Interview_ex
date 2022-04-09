@@ -15,6 +15,7 @@ const pattern = date.compile('YYYY/MM/DD h:m:s A');
 var data = {
 	message: 'My name is Evan Drake',
 	timestamp: date.format(new Date(), pattern)
+	port: PORT
 };
 
 // App
