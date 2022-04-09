@@ -10,12 +10,11 @@ const PORT = 80; // pulling dynamic port from process.env.PORT for dyno support
 const HOST = '0.0.0.0';
 
 // timestamp format
-const pattern = date.compile('YYYY/MM/DD h:m:s A');
 
 var data = {
 	message: 'My name is Evan Drake',
-	timestamp: date.format(new Date(), pattern)
-	port: PORT
+	timestamp: Math.floor(new Date() / 1000)
+	// port: PORT
 };
 
 // App
