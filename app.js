@@ -6,7 +6,7 @@ const express = require('express');
 const date = require('date-and-time');
 
 // Constants for server info
-const PORT = (process.env.PORT || 80); // pulling dynamic port from process.env.PORT for dyno support
+const PORT = 80; // pulling dynamic port from process.env.PORT for dyno support
 const HOST = '0.0.0.0';
 
 // timestamp format
