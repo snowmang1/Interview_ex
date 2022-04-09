@@ -1,5 +1,8 @@
 name: docker_ci
-on: [push]
+on:
+  push:
+    branches:
+      - trunk
 jobs:
   docker:
     runs-on: ubuntu-latest
