@@ -20,7 +20,7 @@ var data = {
 // App
 const app = express();
 // request will go to root '/'
-app.get('/', (req, res) => {
+app.get('/', (res) => {
 	// res.json will serialize json objects
 	res.send(res.json(data));
 });
