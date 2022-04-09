@@ -5,5 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: run tests
-        uses: liatrio/github-actions/apprentice-action@v1
+      - 
+        name: checkout
+        uses: actions/checkout@v3
+      - 
+        name: run tests
+        uses: liatrio/github-actions/apprentice-action
