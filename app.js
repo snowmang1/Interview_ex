@@ -6,7 +6,7 @@ const express = require('express');
 const date = require('date-and-time');
 
 // Constants for server info
-const PORT = 8080;
+// const PORT = process.env.PORT; This will not work with heroku's dynamic port
 const HOST = '0.0.0.0';
 
 // timestamp format
@@ -26,5 +26,5 @@ app.get('/', (req, res) => {
 });
 
 // create connection
-app.listen(PORT, HOST);
+app.listen(process.env.PORT, HOST);// pulling dynamic port from process.env.PORT for dyno support
 console.log(`Running on http://${HOST}:${PORT}`);
