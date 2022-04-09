@@ -11,5 +11,7 @@ RUN npm install
 COPY . .
 # copy all wokring files
 
+EXPOSE $PORT
+
 CMD ["node", "app.js"]
 # cammand to start server
