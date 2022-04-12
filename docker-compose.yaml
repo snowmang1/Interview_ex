@@ -4,4 +4,4 @@ services:
     build: .
     working_dir: /usr/src/app
     ports:
-      - "80:8080" # set visible port
+      - "8080:80" # set visible port

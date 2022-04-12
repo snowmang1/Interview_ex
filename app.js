@@ -7,7 +7,7 @@ const date = require('date-and-time');
 
 // Constants for server info
 const PORT = 80; // pulling dynamic port from process.env.PORT for dyno support
-const HOST = '172.17.0.1';
+const HOST = '0.0.0.0'; // localhost
 
 // timestamp format
 
@@ -26,5 +26,5 @@ app.get('/', (res) => {
 });
 
 // create connection
-app.listen(PORT);
+app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
