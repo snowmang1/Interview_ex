@@ -1,6 +1,9 @@
 name: Liatrio_apprintice_tests
 on: [push]
 
+env:
+  API_IMG: "ghcr.io/git-compendium/ci-docker/api:latest"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,6 +11,9 @@ jobs:
       -
         name: checkout
         uses: actions/checkout@v3
+      -
+        name: Build docker image
+        run: docker build .
       -
         name: run tests
         uses: liatrio/github-actions/apprentice-action@master
