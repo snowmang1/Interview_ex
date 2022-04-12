@@ -12,8 +12,9 @@ jobs:
         name: checkout
         uses: actions/checkout@v3
       -
-        name: Build docker image
-        run: docker build .
+        name: Build & Run docker image
+        run: docker build -t build .
+        run: docker run -p 80:80 build
       -
         name: run tests
         uses: liatrio/github-actions/apprentice-action@master
