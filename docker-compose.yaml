@@ -8,3 +8,10 @@ services:
     networks:
       front-tier:
         ipv4_address: 172.17.0.1
+
+networks:
+  front-tier:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.17.0.1/24"
