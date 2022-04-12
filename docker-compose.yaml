@@ -4,12 +4,8 @@ services:
     build: .
     working_dir: /usr/src/app
     ports:
-      - "80:80" # set visible port
-    networks:
-      app_net:
-        link_local_ips:
-          - 172.17.0.1
-
-networks:
-  app_net:
-      driver: default
+      - target: 80
+        host_ip: 172.17.0.1
+        published: 80
+        protocol: tcp
+        mode: host
