@@ -5,3 +5,7 @@ services:
     working_dir: /usr/src/app
     ports:
       - "80:80" # set visible port
+    ipam:
+      config:
+        - subnet: 172.17.0.1/24
+          gateway: 172.17.0.1
