@@ -9,12 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        name: checkout
+        name: Checkout
         uses: actions/checkout@v3
       -
         name: Build & Run docker image
-        run: docker build -t build .
-        run: docker run -p 80:80 build
+        run: docker-compose up -d
       -
         name: run tests
         uses: liatrio/github-actions/apprentice-action@master
