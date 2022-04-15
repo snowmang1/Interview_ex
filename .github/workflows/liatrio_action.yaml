@@ -10,7 +10,10 @@ jobs:
     steps:
       -
         name: build
-        run: docker run -dp 80:80 .
+        run: docker build -t test-build .
+      -
+        name: run
+        run: docker run -dp 80:80 test-build
       -
         name: run tests
         uses: liatrio/github-actions/apprentice-action@master
