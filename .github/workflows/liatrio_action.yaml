@@ -1,9 +1,16 @@
 name: Liatrio_apprintice_tests
 on: [push]
 
+env:
+  PORT: 80
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: run tests
-        uses: liatrio/github-actions/apprentice-action@v1
+      -
+        name: build
+        run: docker run -dp 80:80 .
+      -
+        name: run tests
+        uses: liatrio/github-actions/master@v1
