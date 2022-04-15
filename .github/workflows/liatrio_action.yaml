@@ -13,4 +13,4 @@ jobs:
         run: docker run -dp 80:80 .
       -
         name: run tests
-        uses: liatrio/github-actions/master
+        uses: liatrio/github-actions/apprentice-action@master
