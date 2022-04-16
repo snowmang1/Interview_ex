@@ -1,4 +1,4 @@
-![docker_ci](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml)
+[![docker_ci](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml)
 
 [![Deploy_to_Heroku](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml)
 
