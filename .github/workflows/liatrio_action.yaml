@@ -1,9 +1,6 @@
 name: Liatrio_apprintice_tests
 on: [push]
 
-env:
-  PORT: 80
-
 jobs:
   build:
     runs-on: ubuntu-latest
