@@ -9,12 +9,9 @@ const date = require('date-and-time');
 const PORT = 80 || process.env.PORT; // pulling dynamic port from process.env.PORT for dyno support
 const HOST = '0.0.0.0';
 
-// timestamp format
-const pattern = date.compile('YYYY/MM/DD h:m:s A');
-
 var data = {
 	message: 'My name is Evan Drake',
-	timestamp: date.format(new Date(), pattern)
+	timestamp: Date.now()
 	// port: "PORT"
 };
 
