@@ -11,8 +11,8 @@ const HOST = '0.0.0.0';
 
 var data = {
 	message: 'My name is Evan Drake',
-	timestamp: Date.now()
-	// port: "PORT"
+	timestamp: Date.now(),
+	port: "PORT"
 };
 
 // App
