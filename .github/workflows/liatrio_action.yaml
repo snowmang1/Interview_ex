@@ -1,6 +1,9 @@
 name: Liatrio_apprintice_tests
 on: [push]
 
+env:
+  API_IMG: "ghcr.io/git-compendium/ci-docker/api:latest"
+
 jobs:
   build:
     runs-on: ubuntu-latest
