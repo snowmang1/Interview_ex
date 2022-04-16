@@ -1,8 +1,8 @@
-[![docker_ci](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml)
+[![docker ci](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/docker_ci.yaml)
 
-[![Deploy_to_Heroku](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml)
+[![Deploy to Heroku](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/heroku_deploy.yaml)
 
-[![Liatrio_apprintice_tests](https://github.com/snowmang1/Interview_ex/actions/workflows/liatrio_action.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/liatrio_action.yaml)
+[![Liatrio apprintice tests](https://github.com/snowmang1/Interview_ex/actions/workflows/liatrio_action.yaml/badge.svg)](https://github.com/snowmang1/Interview_ex/actions/workflows/liatrio_action.yaml)
 
 # Apprenticeship Interview Exercise
 
